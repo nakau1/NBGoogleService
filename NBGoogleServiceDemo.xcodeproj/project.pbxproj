@@ -16,6 +16,7 @@
 		DBC0EE4D1D4B03FD007E3D02 /* NBGoogleService.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC0EE4C1D4B03FD007E3D02 /* NBGoogleService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBC0EE511D4B03FD007E3D02 /* NBGoogleService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC0EE4A1D4B03FD007E3D02 /* NBGoogleService.framework */; };
 		DBC0EE521D4B03FD007E3D02 /* NBGoogleService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBC0EE4A1D4B03FD007E3D02 /* NBGoogleService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DBC0EE581D4B0AFD007E3D02 /* NBGoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC0EE571D4B0AFD007E3D02 /* NBGoogleService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DBC0EE4A1D4B03FD007E3D02 /* NBGoogleService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NBGoogleService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC0EE4C1D4B03FD007E3D02 /* NBGoogleService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBGoogleService.h; sourceTree = "<group>"; };
 		DBC0EE4E1D4B03FD007E3D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC0EE571D4B0AFD007E3D02 /* NBGoogleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBGoogleService.swift; sourceTree = "<group>"; };
 		F3C409A69ABFA8E39E33E041 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 		DBC0EE4B1D4B03FD007E3D02 /* NBGoogleService */ = {
 			isa = PBXGroup;
 			children = (
+				DBC0EE571D4B0AFD007E3D02 /* NBGoogleService.swift */,
 				DBC0EE4C1D4B03FD007E3D02 /* NBGoogleService.h */,
 				DBC0EE4E1D4B03FD007E3D02 /* Info.plist */,
 			);
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC0EE581D4B0AFD007E3D02 /* NBGoogleService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +435,7 @@
 			baseConfigurationReference = F3C409A69ABFA8E39E33E041 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = NBGoogleServiceDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neroblu.ios.libs.NBGoogleServiceDemo;
@@ -443,6 +448,7 @@
 			baseConfigurationReference = 07D9BEB6CBFDDEA7159EE032 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = NBGoogleServiceDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neroblu.ios.libs.NBGoogleServiceDemo;
@@ -453,6 +459,7 @@
 		DBC0EE531D4B03FD007E3D02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -464,6 +471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.neroblu.ios.libs.NBGoogleService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -473,6 +481,7 @@
 		DBC0EE541D4B03FD007E3D02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
