@@ -1,4 +1,4 @@
-d::Spec.new do |s|
+Pod::Spec.new do |s|
   s.name         = "NBGoogleService"
   s.version      = "1.0.0"
   s.summary      = "NeroBlu: Wrapped Google Services"
